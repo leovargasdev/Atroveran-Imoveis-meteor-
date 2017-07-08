@@ -1,0 +1,147 @@
+<template name="sobre">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-11">
+                <h1 class="titulo">Sobre</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-11">
+            <div class="row">
+                <div class="subTituloSobre col-md-6 col-md-offset-3">
+                    <h3 class="titulo">Tudo que você precisa saber sobre nós</h3>
+                    <div class="linhaTextos"></div>
+                </div>
+            </div>
+            <br>
+            <div class="botoesSobre row">
+                <div class="col-xs-8 col-xs-offset-2
+                            col-sm-4 col-sm-offset-1
+                            col-md-2 col-md-offset-1
+                            col-lg-2 col-lg-offset-1">
+                    <button id="spanData" type="button" class="btn btn-success btn-block" data-toggle="collapse" data-target="#data">
+                        <span class="glyphicon glyphicon-calendar"></span> Data de Criação
+                    </button>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2
+                            col-sm-4 col-sm-offset-2
+                            col-md-2 col-md-offset-0
+                            col-lg-2 col-lg-offset-0">
+                    <button id="spanMotivo" type="button" class="btn btn-success btn-block" data-toggle="collapse" data-target="#motivo">
+                        <span class="glyphicon glyphicon-usd"></span> Motivo
+                    </button>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2
+                            col-sm-4 col-sm-offset-4
+                            col-md-2 col-md-offset-0
+                            col-lg-2 col-lg-offset-0">
+                    <button id="spanSomos" type="button" class="btn btn-success btn-block" data-toggle="collapse" data-target="#somos">
+                        <span class="glyphicon glyphicon-search"></span> Quem Somos
+                    </button>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2
+                            col-sm-4 col-sm-offset-1
+                            col-md-2 col-md-offset-0
+                            col-lg-2 col-lg-offset-0">
+                    <button id="spanSurgiu" type="button" class="btn btn-success btn-block" data-toggle="collapse" data-target="#surgiu">
+                        <span class="glyphicon glyphicon-globe"></span> Onde Surgiu
+                    </button>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2
+                            col-sm-4 col-sm-offset-2
+                            col-md-2 col-md-offset-0
+                            col-lg-2 col-lg-offset-0">
+                    <button id="spanContatos" type="button" class="btn btn-success btn-block" data-toggle="collapse" data-target="#contatos">
+                        <span class="glyphicon glyphicon-phone-alt"></span> Contatos
+                    </button>
+                </div>
+            </div>
+            <div class="descricoesBotoes">
+                <br>
+                <div id="data" class="collapse" >
+                    <p>Era um dia frio, pois era inverno!</p>
+                    <p>No dia 12 de julho de 1992</p>
+                    <p>As 13:57 PM</p>
+                    <br>
+                    <div class="linhaTextos"></div>
+                </div>
+                <br>
+                <div id="motivo" class="collapse" >
+                    <p>As empresas que forneciam esse serviço, não eram de boa qualidade</p>
+                    <p>A partir disso decidi criar uma empresa para mudar esse cenário</p>
+                    <p>Pois eu não sou uma empresa de Imóveis que o Brasil merece, mas oque ele precisa</p>
+                    <br>
+                    <div class="linhaTextos"></div>
+                </div>
+                <br>
+                <div id="somos" class="collapse" >
+                    <p>Trabalhamos com o ramo de venda e aluga de imóveis(apartamentos, casas)</p>
+                    <p>Se você quiser colocar seu imóvel à venda, fale conosco!</p>
+                    <p>Se você quiser alugar/comprar um imóvel, fale conosco!</p>
+                    <p><b>Nosso lema é:</b> Dedicação total a você!!!</p>
+                    <br>
+                    <div class="linhaTextos"></div>
+                </div>
+                <br>
+                <div id="surgiu" class="collapse" >
+                    <p>Quando eu estava eu passeando pela cidade Dom Aquino</p>
+                    <p>Que fica localizada no estado do Mato Grosso</p>
+                    <p>Tive a brilhante ideia de criar essa empresa</p>
+                    <p>E assim deixando a vida de muitas familias felizes!!!</p>
+                    <br>
+                    <div class="linhaTextos"></div>
+                </div>
+                <br>
+                <div id="contatos" class="collapse">
+                    <p><b>Email:</b> atroveran@yahoo.com</p>
+                    <p><b>Telefone:</b>(049) 4455 - 3113</p>
+                    <p><b>Endereço:</b> Rua Qualquer Lugar</p>
+                    <p><b>Fax:</b> 0800 080 567</p>
+                    <p><b>Caixa Postal:</b> 783912</p>
+                    <br>
+                    <div class="linhaTextos"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+                // Data de Criação
+                $("#data").on("hide.bs.collapse", function(){//Volta ao icone normal
+                    $("#spanData").html('<span class="glyphicon glyphicon-calendar"></span> Data de Criação');
+                });
+                $("#data").on("show.bs.collapse", function(){//Troca de icone
+                    $("#spanData").html('<span class="glyphicon glyphicon-triangle-top"></span> Data de Criação');
+                });
+                // Motivo
+                $("#motivo").on("hide.bs.collapse", function(){//Volta ao icone normal
+                    $("#spanMotivo").html('<span class="glyphicon glyphicon-usd"></span> Motivo');
+                });
+                $("#motivo").on("show.bs.collapse", function(){//Troca de icone
+                    $("#spanMotivo").html('<span class="glyphicon glyphicon-triangle-top"></span> Motivo');
+                });
+                 // Quem somos
+                $("#somos").on("hide.bs.collapse", function(){//Volta ao icone normal
+                    $("#spanSomos").html('<span class="glyphicon glyphicon-search"></span> Quem Somos');
+                });
+                $("#somos").on("show.bs.collapse", function(){//Troca de icone
+                    $("#spanSomos").html('<span class="glyphicon glyphicon-triangle-top"></span> Quem Somos');
+                });
+                 // Onde Surgiu
+                $("#surgiu").on("hide.bs.collapse", function(){//Volta ao icone normal
+                    $("#spanSurgiu").html('<span class="glyphicon glyphicon-globe"></span> Onde Surgiu');
+                });
+                $("#surgiu").on("show.bs.collapse", function(){//Troca de icone
+                    $("#spanSurgiu").html('<span class="glyphicon glyphicon-triangle-top"></span> Onde Surgiu');
+                });
+                 // Contatos
+                $("#contatos").on("hide.bs.collapse", function(){//Volta ao icone normal
+                    $("#spanContatos").html('<span class="glyphicon glyphicon-phone-alt"></span> Contatos');
+                });
+                $("#contatos").on("show.bs.collapse", function(){//Troca de icone
+                    $("#spanContatos").html('<span class="glyphicon glyphicon-triangle-top"></span> Contatos');
+                });
+            });
+    </script>
+</template>

@@ -1,0 +1,32 @@
+.main-content {
+    max-width: 1200px;/*tamanho q ele ocupa da tela*/
+    padding-top: 40px;
+    padding-right: 40px;
+    margin: 0 0 40px 250px;
+}
+
+.anuncio {
+	border: 1px solid #ececec;
+	background-color: #2d2d2d;
+	padding: 10px 20px;
+	margin: 0px 0px 20px 0px;
+}
+
+.anuncio:hover {
+	background-color: #3a3a3a;
+}
+
+.anuncio-title {
+	color: #52b859;
+	font-size: 40px;
+	margin: 0px 0px;
+	padding-bottom: 10px;
+	word-wrap: break-word;
+    text-align: center;
+}
+
+.meta {
+	color: #fff;	
+	font-size: 18px;
+	font-weight: 900;
+}

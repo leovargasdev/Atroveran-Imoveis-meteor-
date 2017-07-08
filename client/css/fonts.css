@@ -1,0 +1,15 @@
+/* FONTS */
+h2, h3, h4, h5, h6, p,{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Fjalla One', sans-serif;
+}
+.anuncio{
+    font-size: 19px;
+}
+
+

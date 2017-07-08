@@ -1,0 +1,19 @@
+<template name="menu">
+    <aside class="sidebar-left">
+        <img src="logo.png" class="icon">
+        <a class="company-logo" href="/">Atroveran Imóveis</a>
+        <div class="sidebar-links">
+            {{#if currentUser}}
+                <a class="link-purple"  href="cadastroAnuncio" id=""><i class="fa fa-plus-circle"></i>Novo Anuncio</a> 
+                <a class="link-blue"        href="anuncioVenda" id=""><i class="fa fa-handshake-o"></i>Comprar</a>
+                <a class="link-yellow"      href="anuncioAluga" id=""><i class="fa fa-money"></i>Alugar</a>
+            {{/if}}
+            <a class="link-green"       href="sobre" id=""><i class="fa fa-thumbs-up"></i>Sobre</a>
+            {{#if currentUser}}
+                <a class="link-purple"  href="#" id="sair"><i class="fa fa-sign-out"></i>Logout</a>
+            {{else}}
+                <a class=""             href="/" id=""><i class="fa fa-sign-in"></i>Login</a>
+            {{/if}}
+        </div>
+    </aside>
+</template>
